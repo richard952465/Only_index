@@ -1,0 +1,435 @@
+/* 通用样式 */
+body{
+	font:12px "microsoft yahei",Arial;
+	margin:0px;
+	padding:0px;
+}
+p,ul,ol,li,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+img{
+	vertical-align:bottom;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+
+/* 整体布局 */
+#header,#main,#footer{
+	width:1350px;
+	margin:0px auto;
+}
+#foot_box{
+	width:1000px;
+	margin:50px auto;
+}
+
+/* header start */
+#header{
+	/* 高 背景色 上下内边距 */
+	height:74px;  /* 暂定 */
+	background-color:#EDEEF2;
+	padding:30px 0px 15px;
+}
+/* logo */
+#header>div{
+	/* 宽 高 背景色 居中 */
+	width:990px;
+	height:74px;
+	background-color:#565B61;
+	margin:0px auto;
+}
+/* nav */
+#header>div ul{
+	/* 左浮动 背景色 */
+	float:left;
+	background-color:#424242;
+}
+#header>div ul li{
+	float:left;
+}
+#header>div ul li>a{
+	/* 显示方式 左右内边距 高 行高 去下划线 白色文本 */
+	display:block;
+	padding:0px 15px;
+	height:74px;
+	line-height:74px;
+	text-decoration:none;
+	color:#FFF;
+}
+#header>div ul li>a:hover{
+	/* 文本颜色 背景颜色 */
+	color:#41414B;
+	background-color:#FFEA01;
+}
+#header>div>a.search_botton>img{
+	float:right;
+	margin-top:31px;
+	margin-right:15px;
+}
+/* header end */
+/* section start */
+/* banner */
+#banner{
+	/* 相对定位 */
+	position:relative;
+}
+#banner a{
+	/* 绝对定位 */
+	position:absolute;
+	top:-16px;
+	left:0px;
+}
+/* 获奖名单 */
+.promotion{
+	/* 高 背景颜色 */
+	height:100px;
+	background-color:#EDEEF2;
+	position:relative;
+}
+.promotion div.content{
+	/* 高 宽 水平居中 边框 背景 定位 位置偏移 */
+	height:130px;
+	width:990px;
+	border:2px solid #DCAB11;
+	background-color:#FFF;
+	position:absolute;
+	bottom:0px;
+	left:178px;
+}
+.promotion h1{
+	/* 水平居中 颜色 加粗 上下内边距 */
+	text-align:center;
+	color:#DCAB11;
+	padding:15px 0px;
+	font-size:26pt;
+}
+.promotion div.content p{
+	/* 宽 水平居中 文本居中 左右边框 行高 文本颜色 */
+	width:400px;   /*暂定*/
+	margin:0px auto;
+	text-align:center;
+	border-left:1px solid #DCAB11;
+	border-right:1px solid #DCAB11;
+	line-height:20px;
+	color:#D9AF1B;
+}
+.promotion a{
+	/* 文本颜色 去下划线 加粗 内边距 背景颜色 定位 */
+	color:#FFF;
+	text-decoration:none;
+	font-weight:bold;
+	padding:2px 4px;
+	background-color:#4E2803;
+	/* 定位 */
+	position:absolute;
+	right:30px;
+	bottom:10px;
+}
+.promotion a b{
+	/* 显示方式 宽 高 边框 左边框颜色 */
+	display:inline-block;
+	width:0px;
+	height:0px;
+	border:5px solid transparent;
+	border-left-color:#fff;
+	margin-left:10px;
+}
+/* 时尚风向标 fashion */
+#fashion{
+	/* 高 背景 */
+	height:89px;
+	background-color:#555A60;
+	/* 上下外边距 */
+	margin:20px 0px 10px;
+}
+#fashion div.content{
+	/* 宽 水平居中 */
+	width:950px;
+	margin:0px auto;
+}
+#fashion div.content div{
+	padding-left:15px;
+}
+#fashion h2{
+	/* 文字大小 颜色 上内边距 */
+	font-size:30px;
+	color:#fff;
+	padding-top:10px;
+}
+#fashion span{
+	color:#BBC1D1;
+}
+#fashion p{
+	/* 右浮动 左右内边距 行高 文字大小 文本颜色 背景颜色 */
+	float:right;
+	padding:0px 15px;
+	line-height:89px;
+	font-size:16px;
+	color:#3E3C49;
+	background-color:#FFE900;
+}
+/* 早秋新品 夏季热卖 */
+#summer_hot{
+	height:320px;
+	background-color:#EFEFEF;
+}
+#summer_hot div{
+	width:990px;
+	margin:0px auto;
+}
+#summer_hot p{
+	float:left;
+	/* 相对定位，配合a标记的绝对定位 */
+	position:relative;
+}
+#summer_hot a{
+	/* 文本颜色 大小 定位 位置偏移 */
+	color:#333;
+	font-size:16px;
+	position:absolute;
+	bottom:35px;
+	right:70px;
+}
+/* w990样式 */
+.w990{
+	width:990px;
+	margin:0px auto;
+}
+/* 放心购买 */
+#relax_shopping{
+	margin:30px 0px;
+	overflow:hidden;/* 撑起当前元素的高度 */
+}
+#relax_shopping div.border{
+	float:left;
+	/* 上边框 宽 */
+	/* 上外边距（或相对定位） */
+	border-top:3px solid #D8D8D8;
+	width:200px;
+	margin-top:12px;
+}
+#relax_shopping div.text{
+	float:left;
+	/* 宽 居中对齐 */
+	width:590px;
+	text-align:center;
+}
+#relax_shopping div.text a{
+	color:#707070;
+	text-decoration:none;
+}
+#relax_shopping div.text a:hover{
+	text-decoration:underline;
+}
+/* 分类表格 */
+#tbl{
+	/* 宽 边框 边框合并 固定表格布局 */
+	width:100%;
+	border:1px solid #D6D6D6;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+#tbl td{
+	/* 宽 高 边框 文本水平居中 文字大小 加粗 */
+	width:25%;
+	height:80px;
+	border:1px solid #D6D6D6;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+}
+/* 编辑推荐 */
+#editor{
+	overflow:hidden;
+	margin-top:15px;
+}
+#editor>div{
+	/* 浮动 宽 上内边距 */
+	float:left;
+	width:240px;
+	padding-top:15px;
+}
+#editor>div div{
+	/* 上外边距 上边框 */
+	margin-top:15px;
+	border-top:5px solid #EFEFEF;
+	/* 相对定位，配合a标记的绝对定位 */
+	position:relative;
+	/* 高度 */
+	height:100px; /* 暂定 */
+}
+#editor>div div a{
+	/* 显示方式 宽 高 背景 定位 位置偏移 */
+	display:inline-block;
+	width:38px;
+	height:38px;
+	background:url(images/only_39.png) no-repeat;
+	/* 绝对定位 */
+	position:absolute;
+	right:0px;
+	top:-5px;
+}
+#editor>div div a.lf_btn{
+	/* 位置偏移 */
+	right:38px;
+}
+#editor>div div a.rt_btn{
+	background-position:-38px 0px;
+}
+#editor>ul{
+	/* 左浮动 左外边距 宽 */
+	float:left;
+	margin-left:10px;
+	width:240px;
+	text-align:center;
+}
+#editor>ul li{
+	margin-bottom:10px;
+}
+#editor>ul li img{
+	cursor:pointer;
+	border:2px solid transparent;
+}
+#editor>ul li img:hover{
+	border-color:#0F0F0F;
+}
+/* 明星单品 */
+#hot_selling{
+	margin-top:50px;
+	overflow:hidden;
+}
+#hot_selling div.imgs{
+	float:left;
+	margin-right:10px;
+}
+#hot_selling div p{
+	cursor:pointer;
+}
+#hot_selling div ul{
+	overflow:hidden;
+}
+#hot_selling div.imgs li{
+	float:left;
+	padding-top:8px;
+	cursor:pointer;
+}
+#hot_selling div.imgs li.mid{
+	margin:0px 7px;
+}
+#hot_selling div.imgs li:hover{
+	background:url(images/only_1024.png) no-repeat center top;
+}
+/* 标志 */
+#hot_selling div.right_box{
+	float:right;
+	margin-top:30px;
+	margin-right:30px;
+}
+#hot_selling div.right_box div{
+	margin-top:15px;
+	border-top:5px solid #EFEFEF;
+	position:relative;
+	height:100px;	
+}
+#hot_selling div.right_box div a{
+	/* 显示方式 宽 高 背景 定位 位置偏移 */
+	display:inline-block;
+	width:38px;
+	height:38px;
+	background:url(images/only_39.png) no-repeat;
+	/* 绝对定位 */
+	position:absolute;
+	right:0px;
+	top:-5px;
+}
+#hot_selling div.right_box div a.lf_mxbtn{
+	/* 位置偏移 */
+	right:38px;
+}
+#hot_selling div.right_box div a.rt_mxbtn{
+	background-position:-38px 0px;
+}
+/* 随性百搭新风尚 */
+#new_fashion{
+	margin:30px 0px 50px;
+}
+/* 2015夏季新品 爆款专区 全部商品 */
+#btn{
+	text-align:center;
+}
+#btn a{
+	/* 显示方式 上下左右内边距 字体颜色 文本加粗 背景颜色 左右外边距 */
+	display:inline-block;
+	width:174px;
+	text-decoration:none;
+	padding:16px 0px; 
+	color:#FFF;
+	font-weight:bold;
+	background-color:#4C4C4C;
+	margin:0px 30px;
+}
+#btn a:hover{
+	background-color:#FFEA01;
+	color:#000;
+}
+/* 底部：品质保障部分 */
+#foot_box ul{
+	overflow:hidden;
+}
+#foot_box ul li{
+	float:left;
+	border-right:1px solid #D8D8D8;
+	margin-right:15px;
+}
+/* 文字左浮动起来 */
+#foot_box ul li p,#foot_box ul li div{
+	float:left;
+}
+#foot_box ul li div{
+	text-align:left;
+	margin:0px 37px;
+	margin-top:5px;
+}
+#foot_box ul li.help_center{
+	border:none;
+	float:right;
+}
+#foot_box{
+	border-bottom:1px solid #F2F2F2;
+	padding-bottom:20px;
+}
+/* 底部二维码 */
+#footer{
+	width:100%;
+	background-color:#4C4C4C;
+	height:144px;
+}
+#footer ul li{
+	float:left;
+	margin:19px 20px;
+}
+#footer ul li p,#footer ul li div{
+	float:left;
+	margin
+}
+#footer ul{
+	overflow:hidden;
+	width:600px;
+	margin:0px auto;
+}
+#footer ul li div h3{
+	font-size:14px;
+}
+#footer ul li div{
+	margin-top:34px;
+}
+/* section end */
